@@ -11,6 +11,12 @@ public class DoublyLinkList {
         length = 1;
     }
 
+    public void makeEmpty(){
+        head = null;
+        tail = null;
+        length = 0;
+    }
+
     public void append(int value){
         Node newNode = new Node(value);
         if(length == 0){
@@ -95,6 +101,20 @@ public class DoublyLinkList {
         } else{
             printList();
         }
+    }
+
+    public void prepend(int value){
+        Node newNode = new Node(value);
+        if(length == 0 ){
+            head = newNode;
+            tail = newNode;
+        } else{
+            newNode.next = head;
+            head.prev = newNode;
+            head = newNode;
+        }
+        length++;
+
     }
 
 
