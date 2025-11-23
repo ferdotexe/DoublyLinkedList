@@ -3,35 +3,33 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Main Class: ");
-
         DoublyLinkList doublyLinkList = new DoublyLinkList(1);
 
         System.out.println("List:");
         doublyLinkList.printList();
 
-        doublyLinkList.prepend(2);
+        System.out.println("List after RemoveFirst method was called: ");
 
-
-
-        System.out.println("List  prepending a value:");
+        doublyLinkList.removeFirst();
         doublyLinkList.printList();
 
-        doublyLinkList.prepend(3);
+        System.out.println("Adding values to the list: ");
 
+        doublyLinkList.append(1);
+        doublyLinkList.append(2);
+        doublyLinkList.append(3);
+        doublyLinkList.append(4);
 
-
-        System.out.println("List after adding the second prepended value:");
         doublyLinkList.printList();
 
-
-        System.out.println("Emptying list for further tests");
-        doublyLinkList.makeEmpty();
-        System.out.println("----------------------");
-
-
-        System.out.println("List after prepending a vlue to the empty list:");
-        doublyLinkList.prepend(1);
+        System.out.println(" Testing removeFirst with the actual list ");
+        System.out.println("Removed value: " + doublyLinkList.removeFirst().getValue());
         doublyLinkList.printList();
+
+        System.out.println("-----------------------");
+        doublyLinkList.printAll();
+
+
 
 
 
