@@ -29,7 +29,24 @@ public class DoublyLinkList {
 
     }
 
+    public Node removeLast(){
+        Node temp = tail;
+        if(length == 0){
+            return null;
+        } else if( length == 1) {
+            head = null;
+            tail = null;
+            length--;
+            return temp;
+        } else{
 
+            tail = tail.prev;
+            tail.next = null;
+            temp.prev = null;
+            length--;
+            return temp;
+        }
+    }
 
     public Node getHead(){
         return head;
