@@ -8,26 +8,24 @@ public class Main {
         System.out.println("List:");
         doublyLinkList.printList();
 
-        System.out.println("List after RemoveFirst method was called: ");
-
-        doublyLinkList.removeFirst();
-        doublyLinkList.printList();
-
-        System.out.println("Adding values to the list: ");
-
-        doublyLinkList.append(1);
-        doublyLinkList.append(2);
+        System.out.println("List after values were added: ");
         doublyLinkList.append(3);
         doublyLinkList.append(4);
+        doublyLinkList.append(5);
+        doublyLinkList.append(6);
 
         doublyLinkList.printList();
 
-        System.out.println(" Testing removeFirst with the actual list ");
-        System.out.println("Removed value: " + doublyLinkList.removeFirst().getValue());
-        doublyLinkList.printList();
+        System.out.println("Retriving a choosen  node by its index in the list  ");
+        System.out.println(doublyLinkList.get(0).getValue());
 
-        System.out.println("-----------------------");
-        doublyLinkList.printAll();
+        System.out.println("Retriving a second node by its index in the list  ");
+        System.out.println(doublyLinkList.get(1).getValue());
+
+        System.out.println("Retriving a third node by its index in the list  ");
+        System.out.println(doublyLinkList.get(2).getValue());
+
+
 
 
 
