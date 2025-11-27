@@ -9,22 +9,27 @@ public class Main {
         doublyLinkList.printList();
 
         System.out.println("List after values were added: ");
+        doublyLinkList.append(2);
         doublyLinkList.append(3);
         doublyLinkList.append(4);
         doublyLinkList.append(5);
-        doublyLinkList.append(6);
 
         doublyLinkList.printList();
 
-        System.out.println("Retriving a choosen  node by its index in the list  ");
-        System.out.println(doublyLinkList.get(0).getValue());
+        System.out.println("Altering first index: ");
+        doublyLinkList.set(0,2);
+        System.out.println("List updated!");
+        doublyLinkList.printList();
 
-        System.out.println("Retriving a second node by its index in the list  ");
-        System.out.println(doublyLinkList.get(1).getValue());
+        System.out.println("Altering second index: ");
+        doublyLinkList.set(1,3);
+        System.out.println("List updated!");
+        doublyLinkList.printList();
 
-        System.out.println("Retriving a third node by its index in the list  ");
-        System.out.println(doublyLinkList.get(2).getValue());
-
+        System.out.println("Altering third index: ");
+        doublyLinkList.set(2,4);
+        System.out.println("List updated!");
+        doublyLinkList.printList();
 
 
 
